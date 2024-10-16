@@ -213,3 +213,4 @@ while True:
         case 6:
             print("Išeinama iš programos.")
             exit(1)
+
