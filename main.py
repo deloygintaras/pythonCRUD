@@ -26,9 +26,9 @@ def loadFilms():
         for row in reader:
             film = [
                 row[0],
-                row[1],
+                datetime.datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S"),
                 datetime.datetime.strptime(row[2],"%Y-%m-%d %H:%M:%S" ),
-                datetime.datetime.strptime(row[3], "%Y-%m-%d %H:%M:%S")
+                row[3]
             ]
             films.append(film)
         return films
